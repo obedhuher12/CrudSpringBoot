@@ -35,7 +35,7 @@
 
                         <div class="form-group">
                             <label for="startDate">Fecha de inicio:</label>
-                            <input type="text" id="startDate" name="startDate" th:field="*{startDate}" class="form-control" placeholder="YYYY-MM-DD">
+                            <input type="date" id="startDate" name="startDate" th:field="*{startDate}" class="form-control" placeholder="YYYY-MM-DD">
                             <div th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}" class="alert alert-danger mt-2"></div>
                         </div>
 
